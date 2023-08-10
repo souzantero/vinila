@@ -1,2 +1,2 @@
-export * from './cache';
 export * from './repositories';
+export * from './services';
