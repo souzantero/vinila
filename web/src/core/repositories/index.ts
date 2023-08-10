@@ -6,6 +6,7 @@ export * from './load-vinyl-by-id-repository';
 export * from './load-vinyls-repository';
 export * from './refresh-user-email-confirmation-code-repository';
 export * from './remove-vinyl-by-id-repository';
+export * from './reset-user-password-repository';
 export * from './sign-in-repository';
 export * from './sign-me-repository';
 export * from './sign-out-repository';
