@@ -22,12 +22,12 @@ export class VinylFetchRepository
     private readonly authorizationToken: string = '',
   ) {}
 
-  private toModel(supply: any): Vinyl {
+  private toModel(vinyl: any): Vinyl {
     return {
-      id: supply.id,
-      name: supply.name,
-      createdAt: new Date(supply.createdAt),
-      updatedAt: supply.updatedAt ? new Date(supply.updatedAt) : undefined,
+      id: vinyl.id,
+      name: vinyl.name,
+      createdAt: new Date(vinyl.createdAt),
+      updatedAt: vinyl.updatedAt ? new Date(vinyl.updatedAt) : undefined,
     };
   }
 

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useToast } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
-import { SignIn } from '../../ui';
-import { useSignedUser } from '../../hooks';
-import { makeSignIn } from '../../factories';
+import { SignIn } from '../..';
+import { useSignedUser } from '../../../hooks';
+import { makeSignIn } from '../../../factories';
 
 export function SignInPage() {
   const notify = useToast();

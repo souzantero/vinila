@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { useToast } from '@chakra-ui/react';
 import { useQueryClient } from '@tanstack/react-query';
 import { useNavigate } from 'react-router-dom';
-import { Page, PageBody, PageHeader, VinylForm } from '../../../ui';
-import { makeAddVinylRepository } from '../../../factories';
-import { useSignedUser } from '../../../hooks';
+import { Page, PageBody, PageHeader, VinylForm } from '../../..';
+import { makeAddVinylRepository } from '../../../../factories';
+import { useSignedUser } from '../../../../hooks';
 
 export function AddVinylPage() {
   const notify = useToast();
@@ -20,7 +20,7 @@ export function AddVinylPage() {
       const repository = makeAddVinylRepository(
         signedUser!.authorizationToken!,
       );
-      const supply = await repository.add({ name });
+      const vinyl = await repository.add({ name });
       setName('');
 
       notify({
@@ -32,7 +32,7 @@ export function AddVinylPage() {
       queryClient.invalidateQueries(['vinyls']);
       navigate('/manager/vinyls');
 
-      return supply;
+      return vinyl;
     } catch (error) {
       const status = 'error';
       const title = 'Falha ao adicionar vinil.';

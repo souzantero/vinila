@@ -1,16 +1,9 @@
 import React from 'react';
 import { ButtonGroup, Skeleton } from '@chakra-ui/react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { Role } from '../../../../core';
-import {
-  If,
-  NavButton,
-  Page,
-  PageBody,
-  PageHeader,
-  VinylInfo,
-} from '../../../ui';
-import { useVinyl, useAuthorization, useSignedUser } from '../../../hooks';
+import { Role } from '../../../../../core';
+import { If, NavButton, Page, PageBody, PageHeader, VinylInfo } from '../../..';
+import { useVinyl, useAuthorization, useSignedUser } from '../../../../hooks';
 
 export function VinylInfoPage() {
   const navigate = useNavigate();

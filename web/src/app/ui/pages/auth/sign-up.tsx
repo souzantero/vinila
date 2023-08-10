@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useToast } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
-import { SignUp } from '../../ui';
-import { useSignedUser } from '../../hooks';
-import { makeSignUp } from '../../factories';
+import { SignUp } from '../..';
+import { useSignedUser } from '../../../hooks';
+import { makeSignUp } from '../../../factories';
 
 export function SignUpPage() {
   const navigate = useNavigate();

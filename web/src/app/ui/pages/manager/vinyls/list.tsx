@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ButtonGroup, useToast } from '@chakra-ui/react';
 import { useQueryClient } from '@tanstack/react-query';
 import { useNavigate } from 'react-router-dom';
-import { Role, Vinyl } from '../../../../core';
+import { Role, Vinyl } from '../../../../../core';
 import {
   If,
   NavButton,
@@ -10,9 +10,9 @@ import {
   PageBody,
   PageHeader,
   VinylTable,
-} from '../../../ui';
-import { makeRemoveVinylByIdRepository } from '../../../factories';
-import { useAuthorization, useVinyls, useSignedUser } from '../../../hooks';
+} from '../../..';
+import { makeRemoveVinylByIdRepository } from '../../../../factories';
+import { useAuthorization, useVinyls, useSignedUser } from '../../../../hooks';
 
 export function VinylsPage() {
   const notify = useToast();

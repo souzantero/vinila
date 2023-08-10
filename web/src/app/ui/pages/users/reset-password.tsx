@@ -1,8 +1,8 @@
 import React, { useMemo, useState } from 'react';
 import { useToast } from '@chakra-ui/react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
-import { ResetUserPassword } from '../../ui';
-import { makeResetUserPassword } from '../../factories';
+import { ResetUserPassword } from '../..';
+import { makeResetUserPassword } from '../../../factories';
 
 export function ResetUserPasswordPage() {
   const navigate = useNavigate();

@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { useToast } from '@chakra-ui/react';
 import { useQueryClient } from '@tanstack/react-query';
 import { useNavigate, useParams } from 'react-router-dom';
-import { Page, PageBody, PageHeader, VinylForm } from '../../../ui';
-import { makeUpdateVinylByIdRepository } from '../../../factories';
-import { useSignedUser } from '../../../hooks';
-import { useVinyl } from '../../../hooks/useVinyl';
+import { Page, PageBody, PageHeader, VinylForm } from '../../..';
+import { makeUpdateVinylByIdRepository } from '../../../../factories';
+import { useSignedUser } from '../../../../hooks';
+import { useVinyl } from '../../../../hooks/useVinyl';
 
 export function EditVinylPage() {
   const notify = useToast();

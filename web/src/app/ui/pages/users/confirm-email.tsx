@@ -1,11 +1,11 @@
 import React, { useMemo, useState } from 'react';
 import { useToast } from '@chakra-ui/react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
-import { ConfirmUserEmail } from '../../ui';
+import { ConfirmUserEmail } from '../..';
 import {
   makeConfirmUserEmailRepository,
   makeRefreshUserEmailConfirmationCodeRepository,
-} from '../../factories';
+} from '../../../factories';
 
 export function ConfirmUserEmailPage() {
   const [searchParams] = useSearchParams();
