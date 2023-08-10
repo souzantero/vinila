@@ -5,7 +5,7 @@ import {
   Storage,
 } from '../../cache';
 
-export const makeSignedUser = (remind: boolean = false) => {
+export const makeSignedUser = (remind = false) => {
   const localStorage = new LocalStorageAdapter();
   const sessionStorage = new SessionStorageAdapter();
   const storage = new Storage(localStorage, sessionStorage);
