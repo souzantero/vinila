@@ -1,8 +1,8 @@
 import React from 'react';
-import { Routing } from './Routing';
 import { ChakraProvider } from '@chakra-ui/react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { BrowserRouter } from 'react-router-dom';
+import { Routing } from './Routing';
 
 export function App() {
   return (
